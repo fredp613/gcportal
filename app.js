@@ -8,8 +8,12 @@ import 'babel-polyfill'
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import accounts from './routes/accounts';
+import contacts from './routes/contacts';
+import users from './routes/users';
+import fundingapplications from './routes/fundingapplications';
+
 var index = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 
@@ -32,6 +36,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 //ROUTE****************************************
 app.use('/', index);
 app.use('/users', users);
+app.use('/contacts',contacts);
+app.use('/accounts',accounts);
+app.use('/fundingapplications',fundingapplications);
 
 //*********************************************
 

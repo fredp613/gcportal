@@ -4,7 +4,7 @@
 import mongoose from "mongoose"
 
 let Schema = mongoose.Schema;
-
+let	ObjectId = Schema.ObjectId;
 
 const Account = new mongoose.Schema({
 	legalName: String,
@@ -14,4 +14,4 @@ const Account = new mongoose.Schema({
     primaryAddress: ObjectId,
 	mailingAddress: ObjectId
 });
-export default mongoose.model('Account', account);
+export default mongoose.model('Account', Account);
