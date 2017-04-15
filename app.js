@@ -12,6 +12,8 @@ import accounts from './routes/accounts';
 import contacts from './routes/contacts';
 import users from './routes/users';
 import fundingapplications from './routes/fundingapplications';
+import fundingprograms from './routes/fundingprograms';
+import addresses from './routes/addresses';
 
 var index = require('./routes/index');
 
@@ -39,6 +41,8 @@ app.use('/users', users);
 app.use('/contacts',contacts);
 app.use('/accounts',accounts);
 app.use('/fundingapplications',fundingapplications);
+app.use('/fundingprograms',fundingprograms);
+app.use('/addresses',addresses);
 
 //*********************************************
 
