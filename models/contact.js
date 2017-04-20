@@ -10,6 +10,8 @@ const Contact = new mongoose.Schema({
 	lastName: String,
 	email: {type: String, unique: true},
 	website: String,
-    primaryAddress: ObjectId
+    primaryAddress: ObjectId,
+	createdOn: Date,
+	updatedOn: Date,
 });
 export default mongoose.model('Contact', Contact);

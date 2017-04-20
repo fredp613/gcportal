@@ -10,6 +10,7 @@ const Account = new mongoose.Schema({
 	legalName: String,
 	fullName: String,
 	email: {type: String, unique: true},
+	accountType: Number,
 	website: String,
     primaryAddress: ObjectId,
 	mailingAddress: ObjectId

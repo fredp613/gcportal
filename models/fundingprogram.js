@@ -10,6 +10,7 @@ const FundingProgram = new mongoose.Schema({
 	title: String,
 	description: String,
 	eligibility: String,
+	formUrl: String,
 	createdAt: Date,
 	updatedAt: Date
 });

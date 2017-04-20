@@ -10,6 +10,5 @@ const Address = new mongoose.Schema({
 	addressLine2: String,
 	city: String,
 	province: String
-	
 });
 export default mongoose.model('Address',Address);
